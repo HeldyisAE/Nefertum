@@ -1,5 +1,6 @@
 import './Header.css';
 import LogoButton from './LogoButton'
+import SearchBar from './SearchBar';
 
 function Header() {
 
@@ -10,7 +11,7 @@ function Header() {
         </div>
 
         <div className="center">
-            <h1>Search</h1>
+            <SearchBar/>
         </div>
 
         <div className="right">
