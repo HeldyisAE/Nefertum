@@ -1,0 +1,36 @@
+.app-layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 90px 1fr 90px;
+}
+
+/* ---------- TOP ---------- */
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #222;
+}
+
+/* ---------- MID ---------- */
+
+.mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.mid h2 {
+  top: 50%
+}
+/* ---------- BELOW ---------- */
+
+.below {
+  border-top: 1px solid #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
