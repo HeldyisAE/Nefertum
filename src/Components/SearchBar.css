@@ -1,18 +1,18 @@
 .search-wrapper {
     display: flex;
     width: 100%;
-    max-width: 42vh;
-    align-items: center;
+    max-width: 20rem;
+    align-items: stretch;
 }
 
 .search-button {
-    height: 6.3vh;
     margin-left: none;
     border: 1px solid #CD9327;
     border-radius: 20px 0 0 20px;
     border-right: none;
     background: rgba(89, 117, 84, 0.15);
     cursor: pointer;
+    padding: 0 0.75rem;
 }
 
 .search-icon {

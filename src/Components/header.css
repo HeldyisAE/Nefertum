@@ -1,12 +1,38 @@
 .header {
     width: 100%;
-    min-height: 10vh;
+    height: 100%;          /* llena el .top */
 
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 
     gap: 24px;
     padding: 0 24px;
+    overflow: hidden;
+
+    position: relative;
+    background-image: url('/Nefertum Banner.jpeg');
+    background-size: cover;
+    background-position: center top;
+
+    isolation: auto;
+}
+
+.header__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    mask-image: linear-gradient(to bottom, transparent 0%, transparent 30%, black 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 30%, black 100%);
+
+    background: linear-gradient(to bottom, transparent 40%, #0a0a0a 100%);
+}
+
+.header > *:not(.header__bg) {
+    position: relative;
 }
 
 .left {
