@@ -1,0 +1,30 @@
+.user-section {
+    display: flex;
+    width: 100%;
+    max-width: 10vh;
+    align-items: center;
+}
+
+.userbutton {
+    height: 8vh;
+    margin-right: 3vh;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.user-icon {
+    margin-right: 5px;
+    font-size: 4vh;
+    color: #CD9327;
+    transition: all 0.5s ease;
+}
+
+.userbutton:hover .user-icon {
+    transform: scale(1.2);
+    color: #926b22;
+}
+
+.userbutton:active .user-icon {
+    transform: scale(0.9);
+}

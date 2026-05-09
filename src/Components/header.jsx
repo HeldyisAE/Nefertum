@@ -1,6 +1,7 @@
 import './Header.css';
 import LogoButton from './LogoButton'
 import SearchBar from './SearchBar';
+import UserButton from './UserButton';
 
 function Header() {
 
@@ -15,7 +16,7 @@ function Header() {
         </div>
 
         <div className="right">
-            <h1>Menu</h1>
+            <UserButton/>
         </div>
     </div>
   );
