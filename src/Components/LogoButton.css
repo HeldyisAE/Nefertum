@@ -1,0 +1,11 @@
+.logo-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.logo-button img {
+    mix-blend-mode: screen;
+    width: 20vh;
+    height: auto;
+}

@@ -3,7 +3,7 @@
 :root {
   --text: #CD9327;
   --text-h: #F5F5F5;
-  --bg: #08060d;
+  --bg: #0B0B0B;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --accent: #597554;
@@ -39,9 +39,8 @@ body {
 
 #root {
   margin: 0;
-  width: 1126px;
-  height: 100%;
-  max-width: 100%;
+  width: 100%;
+  min-height: 100vh;
   background: var(--bg);
   margin: 0 auto;
   text-align: center;
