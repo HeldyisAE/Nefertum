@@ -31,12 +31,12 @@
 .hero-title {
     font-size: clamp(2rem, 4vw, 5rem);
     line-height: 0.95;
-    color: #f5f5f5;
+    color: #CD9327;
 }
 
 .hero-description {
     max-width: 50ch;  /* ch escala con el font, no con la pantalla */
-    color: #a1a1a1;
+    color: #f5f5f5;
     line-height: 1.7;
     font-size: clamp(0.85rem, 1vw, 1rem);
 }
