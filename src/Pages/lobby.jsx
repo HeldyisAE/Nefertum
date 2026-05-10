@@ -1,6 +1,7 @@
 import './Lobby.css'
 import NewReleases from '../components/NewReleases';
 import CollageNotes from '../components/CollageNotes';
+import DiscoverSection from '../components/discoverSection';
 
 function Lobby() {
   return (
@@ -12,7 +13,7 @@ function Lobby() {
         <CollageNotes/>
       </div>
       <div className="discover-wrapper">
-        <h1> pan </h1>
+        <DiscoverSection/>
       </div>
       <div className="carousel-wrapper">
         <h1> men </h1>

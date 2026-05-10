@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+.discover-section {
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* ── Fondo ── */
+.discover-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.discover-bg__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: saturate(0.6) brightness(0.55);
+    transform: scale(1.04);
+    transition: transform 8s ease;
+}
+
+.discover-section:hover .discover-bg__img {
+    transform: scale(1);
+}
+
+.discover-bg__vignette {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        ellipse at center,
+        transparent 30%,
+        rgba(11, 11, 11, 0.7) 100%
+    );
+}
+
+.discover-bg__gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        #0B0B0B 0%,
+        transparent 18%,
+        transparent 82%,
+        #0B0B0B 100%
+    );
+}
+
+/* ── Contenido ── */
+.discover-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: clamp(20px, 2.5vw, 32px);
+    padding: clamp(48px, 8vw, 96px) clamp(24px, 6vw, 80px);
+    max-width: 720px;
+}
+
+/* eyebrow */
+.discover-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.discover-line {
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: rgb(205, 147, 39);
+}
+
+.discover-eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(192, 182, 117, 0.986);
+    opacity: 0.9;
+}
+
+/* título */
+.discover-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3.5rem, 7vw, 6.5rem);
+    font-weight: 500;
+    line-height: 1;
+    color: #CD9327;
+    letter-spacing: -0.01em;
+    margin: 0;
+}
+
+.discover-title em {
+    font-style: italic;
+    color: #f5f5f5;
+}
+
+/* descripción */
+.discover-body {
+    font-size: clamp(0.9rem, 1.1vw, 1.05rem);
+    color: #f5f5f5;
+    line-height: 1.8;
+    max-width: 48ch;
+    margin: 0;
+}
+
+/* ── Botón ── */
+.discover-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.discover-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 36px;
+    border: 2px solid rgba(214, 147, 21);
+    border-radius: 2px;
+    background: rgba(48, 45, 39, 0.623);
+    cursor: pointer;
+    overflow: hidden;
+    transition: border-color 0.4s ease, color 0.4s ease;
+    color: #CD9327;
+}
+
+.discover-btn__text {
+    position: relative;
+    z-index: 1;
+    font-size: 0.82rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    transition: color 0.4s ease;
+}
+
+.discover-btn__arrow {
+    position: relative;
+    z-index: 1;
+    font-size: 1rem;
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.discover-btn__fill {
+    position: absolute;
+    inset: 0;
+    background: #CD9327;
+    transform: translateX(-101%);
+    transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+    z-index: 0;
+}
+
+.discover-btn:hover .discover-btn__fill {
+    transform: translateX(0);
+}
+
+.discover-btn:hover .discover-btn__text,
+.discover-btn:hover .discover-btn__arrow {
+    color: #0B0B0B;
+}
+
+.discover-btn:hover .discover-btn__arrow {
+    transform: translateX(4px);
+}
+
+.discover-hint {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    color: #f5f5f5;
+    margin: 0;
+}
+
+/* ── Partículas ── */
+.discover-particles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.discover-particle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: rgba(205, 147, 39, 0.4);
+    animation: particle-float 6s ease-in-out infinite;
+}
+
+.discover-particle--1 { top: 20%; left: 15%; animation-delay: 0s;   animation-duration: 7s; }
+.discover-particle--2 { top: 65%; left: 8%;  animation-delay: 1.2s; animation-duration: 8s; }
+.discover-particle--3 { top: 30%; right: 12%; animation-delay: 0.6s; animation-duration: 6s; }
+.discover-particle--4 { top: 70%; right: 18%; animation-delay: 2s;   animation-duration: 9s; }
+.discover-particle--5 { top: 50%; left: 25%; animation-delay: 1.8s; animation-duration: 7s; }
+.discover-particle--6 { top: 15%; right: 30%; animation-delay: 3s;   animation-duration: 8s; }
+
+@keyframes particle-float {
+    0%, 100% { transform: translateY(0px) scale(1);   opacity: 0.4; }
+    50%       { transform: translateY(-18px) scale(1.4); opacity: 0.9; }
+}
