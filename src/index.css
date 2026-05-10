@@ -49,6 +49,7 @@ body {
   grid-template-rows: 90px 1fr 90px;
   flex-direction: column;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 h1,
