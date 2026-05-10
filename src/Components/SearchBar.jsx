@@ -11,7 +11,7 @@ function SearchBar() {
 
             <input 
                 type="text"
-                placeholder="Find perfumes, accords, houses, collections..."
+                placeholder="Find perfumes, accords, houses..."
                 className="searchbar"
                 aria-label="Search"
             />

@@ -35,7 +35,8 @@
     width: 100%;
     padding: 0.9rem 0.5rem;
     border-radius: 0 20px 20px 0;
-    border: 1px solid #CD9327;
+    border: 0.01px solid #CD9327;
+    font-size: 0.9rem;
     border-left: none;
     background: rgba(89, 117, 84, 0.15);
     color: #f5f5f5;
