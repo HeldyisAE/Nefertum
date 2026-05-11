@@ -1,14 +1,18 @@
-import { useState } from 'react'
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
+import Lobby from "./pages/Lobby";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1> Main page </h1>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Lobby />} />
+        </Route>
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

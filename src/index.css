@@ -3,7 +3,7 @@
 :root {
   --text: #CD9327;
   --text-h: #F5F5F5;
-  --bg: #08060d;
+  --bg: #0B0B0B;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --accent: #597554;
@@ -34,18 +34,22 @@
 
 body {
   margin: 0;
+  height: 100%;
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
   background: var(--bg);
   margin: 0 auto;
   text-align: center;
-  min-height: 100svh;
-  display: flex;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 90px 1fr 90px;
   flex-direction: column;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 h1,
@@ -76,19 +80,4 @@ h2 {
 }
 p {
   margin: 0;
-}
-
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
 }
