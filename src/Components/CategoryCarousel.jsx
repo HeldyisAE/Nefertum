@@ -13,15 +13,15 @@ import Aura         from "../assets/Aura.png";
 import LuxuryHotel  from "../assets/LuxuryHotel.png";
 
 const categories = [
-    { id: 1,  name: "Houses & Brands",       sub: "Maisons du parfum",     img: Versace,      bg: "radial-gradient(ellipse at 60% 40%, #1a1200 0%, #0d0d0d 100%)", accent: "#C9A84C" },
+    { id: 1,  name: "Houses & Brands",       sub: "Maisons du parfum",     img: Versace,      bg: "radial-gradient(ellipse at 60% 40%, #adadad9f 0%, #0c0b0b 100%)", accent: "#C9A84C" },
     { id: 2,  name: "Designer · Niche · Indie", sub: "Spectrum of creation", img: BottleParfum, bg: "radial-gradient(ellipse at 40% 60%, #0e0e18 0%, #0a0a0a 100%)", accent: "#8B9EC4" },
     { id: 3,  name: "Notes",                 sub: "The raw ingredients",    img: Iris,         bg: "radial-gradient(ellipse at 50% 30%, #12100e 0%, #0b0b0b 100%)", accent: "#B89FC8" },
     { id: 4,  name: "Accords",               sub: "Harmony in molecules",   img: Ambar,        bg: "radial-gradient(ellipse at 70% 50%, #1a0f00 0%, #0d0b09 100%)", accent: "#D4893A" },
     { id: 5,  name: "Seasons",               sub: "Fragrance through time", img: Estaciones,   bg: "radial-gradient(ellipse at 30% 70%, #0a120e 0%, #090d0b 100%)", accent: "#6BAF8A" },
     { id: 6,  name: "Time of Day",           sub: "Dawn to dusk",           img: Luna,         bg: "radial-gradient(ellipse at 50% 20%, #0a0b18 0%, #08080f 100%)", accent: "#7B8FBF" },
     { id: 7,  name: "Occasion",              sub: "Every moment matters",   img: Vino,         bg: "radial-gradient(ellipse at 60% 60%, #180a0a 0%, #0f0909 100%)", accent: "#B85C6E" },
-    { id: 8,  name: "Gender",                sub: "Beyond boundaries",      img: Androgino,    bg: "radial-gradient(ellipse at 40% 40%, #0f0f0f 0%, #0a0a0a 100%)", accent: "#C4A882" },
-    { id: 9,  name: "Performance",           sub: "Lasting impressions",    img: Aura,         bg: "radial-gradient(ellipse at 50% 50%, #0e1218 0%, #090b0f 100%)", accent: "#5BA3BF" },
+    { id: 8,  name: "Gender",                sub: "Beyond boundaries",      img: Androgino,    bg: "radial-gradient(ellipse at 40% 40%, #474337 0%, #0a0a0a 100%)", accent: "#C4A882" },
+    { id: 9,  name: "Performance",           sub: "Lasting impressions",    img: Aura,         bg: "radial-gradient(ellipse at 50% 50%, #000000 0%, #000000 100%)", accent: "#5BA3BF" },
     { id: 10, name: "Mood",                  sub: "Feel, don't just smell", img: LuxuryHotel,  bg: "radial-gradient(ellipse at 30% 60%, #120e0a 0%, #0d0b09 100%)", accent: "#C49A5A" },
 ];
 
